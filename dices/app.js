@@ -7,7 +7,5 @@ let randomFon = (x) => {
   for (let i = 1; i <= x; i++) {
     arr.push(Math.floor(Math.random() * 7));
   }
-
-  return arr;
+  let arr2 = arr.sort((a, b) => a - b);
 };
-console.log(randomFon(7));
