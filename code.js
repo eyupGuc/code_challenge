@@ -35,8 +35,31 @@ const s7 = studentArray[7];
 
 //  //!   Join()
 
-const elements = [];
-for (let i = 0; i < 3; i++) {
-  elements.push(prompt("Please write something"));
+// const elements = [];
+// for (let i = 0; i < 3; i++) {
+//   elements.push(prompt("Please write something"));
+// }
+// console.log(elements);
+
+let ss1 = "Hello";
+let ss2 = "World";
+let ss3 = ss1.concat(" " + ss2);
+console.log(ss3);
+console.log(typeof ss3);
+
+let str = "Hello";
+
+function toCamelCase(str) {
+  return str
+    .split(" ")
+    .map(function (word, index) {
+      // If it is the first word make sure to lowercase all the chars.
+      if (index == 0) {
+        return word.toLowerCase();
+      }
+      // If it is not the first word only upper case the first char and lowercase the rest.
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+    .join("");
 }
-console.log(elements);
+toCamelCase();
