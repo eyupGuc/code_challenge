@@ -1,6 +1,6 @@
 let arr = [];
-for (let i = 0; i < 3; i++) {
-  arr.push(prompt("Enter your ten number"));
+for (let i = 0; i < 5; i++) {
+  arr.push(prompt("Enter your five number"));
 }
 let number = prompt("Enter your a number");
 
