@@ -27,15 +27,16 @@ const s7 = studentArray[7];
 
 //! Camel Case
 
-const str = String(prompt("please write something"));
-// if(str.trim){
-//     str.
+// var arr = [];
+// for (var i = 0; i < 10; i++) {
+//   arr.push(prompt("please write something"));
 // }
-// console.log(typeof str);
+// console.log(arr);
 
-var camalize = function camalize(str) {
-  return str
-    .toLowerCase()
-    .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
-};
-console.log(camalize(str));
+//  //!   Join()
+
+const elements = [];
+for (let i = 0; i < 3; i++) {
+  elements.push(prompt("Please write something"));
+}
+console.log(elements);
