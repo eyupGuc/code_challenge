@@ -8,4 +8,10 @@ let randomFon = (x) => {
     arr.push(Math.floor(Math.random() * 7));
   }
   let arr2 = arr.sort((a, b) => a - b);
+  let arr3 = [];
+  for (i = 0; i < arr2.length; i++) {
+    if (arr2[i] === 1) {
+      arr3.push("one");
+    }
+  }
 };
