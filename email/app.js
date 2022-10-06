@@ -25,7 +25,7 @@ checkEmail = (x) => {
     z[0];
     console.log(z[0]);
     console.log(z.length);
-    return console.log(`invalid mail 2`);
+    return alert(`invalid mail 2`);
   }
   let counter = 0;
   for (let i = 0; i < z.length; i++) {
@@ -33,12 +33,24 @@ checkEmail = (x) => {
       counter++;
     }
     if (counter > 1) {
-      return console.log("invalid email 3");
+      return alert("invalid email 3");
     }
   }
   //** '.' den sonra en az iki karakter olmalıdır. */
   if (z.length - z.lastIndexOf(".") < 3) {
-    return console.log(`invalid email 4`);
+    return alert(`invalid email 4`);
   }
+
+  //**En az bir adet '. '@' işaretinden sonra. */
+  let counter2 = 0;
+  for (let m = 0; m < z.slice(z.indexOf("@")).length; m++) {
+    if (z.slice(z.indexOf("@"))[m] === ".") {
+      counter2++;
+    }
+  }
+  if (counter2 < 1) {
+    return alert(`invalid email5`);
+  }
+  return alert(`The email you entered is valid`);
 };
 checkEmail(x);
