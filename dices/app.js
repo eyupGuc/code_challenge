@@ -13,5 +13,22 @@ let randomFon = (x) => {
     if (arr2[i] === 1) {
       arr3.push("one");
     }
+    if (arr2[i] === 2) {
+      arr3.push("two");
+    }
+    if (arr2[i] === 3) {
+      arr3.push("three");
+    }
+    if (arr2[i] === 4) {
+      arr3.push("four");
+    }
+    if (arr2[i] === 5) {
+      arr3.push("five");
+    }
+    if (arr2[i] === 6) {
+      arr3.push("six");
+    }
   }
+  return arr3.join("-");
 };
+console.log(randomFon(6));
