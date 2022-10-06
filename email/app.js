@@ -8,7 +8,7 @@
 // let x = "How-areyou-doing- today";
 // const myArray = x.trim().split("-");
 // console.log(myArray);
-const x = "meydanguresi@gmail.com";
+const x = prompt("Enter your mail");
 
 checkEmail = (x) => {
   let z = x.split("");
