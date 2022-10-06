@@ -11,7 +11,7 @@
 const x = "meydanguresi@@gmail.com";
 checkEmail = (x) => {
   let z = x.split("");
-  console.log(z);
+  //   console.log(z);
 
   let y = "abcdefghijklmnopqrstuvwxyz0123456789_+.@";
   for (let i = 0; i < z.length; i++) {
@@ -21,7 +21,7 @@ checkEmail = (x) => {
   }
   if (z[0] === "@") {
     z[0];
-    console.log(z[0]);
+    // console.log(z[0]);
     return console.log(`invalid mail 2`);
   }
   let counter = 0;
