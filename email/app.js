@@ -17,7 +17,7 @@ checkEmail = (x) => {
   let y = "abcdefghijklmnopqrstuvwxyz0123456789_+.@";
   for (let i = 0; i < z.length; i++) {
     if (y.search(z[i].toLowerCase()) === -1) {
-      return console.log("invalid email");
+      return alert("invalid email");
     }
   }
   //****mail @ ile başlamayacak ve birden fazla @ bulunmayacak */
