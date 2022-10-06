@@ -8,7 +8,8 @@
 // let x = "How-areyou-doing- today";
 // const myArray = x.trim().split("-");
 // console.log(myArray);
-const x = "meydanguresi@@gmail.com";
+const x = "meydanguresi@gmail.com";
+
 checkEmail = (x) => {
   let z = x.split("");
   //   console.log(z);
@@ -19,9 +20,11 @@ checkEmail = (x) => {
       return console.log("invalid email");
     }
   }
+  //****mail @ ile başlamayacak ve birden fazla @ bulunmayacak */
   if (z[0] === "@") {
     z[0];
-    // console.log(z[0]);
+    console.log(z[0]);
+    console.log(z.length);
     return console.log(`invalid mail 2`);
   }
   let counter = 0;
@@ -32,6 +35,10 @@ checkEmail = (x) => {
     if (counter > 1) {
       return console.log("invalid email 3");
     }
+  }
+  //** '.' den sonra en az iki karakter olmalıdır. */
+  if (z.length - z.lastIndexOf(".") < 3) {
+    return console.log(`invalid email 4`);
   }
 };
 checkEmail(x);
