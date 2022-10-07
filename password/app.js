@@ -1,4 +1,4 @@
-const password="324!@H5xy";
+const password="!@H5xy324";
 const scope='!@#$%^&*()\_+~|}{[]:;?><,./-=';
 
 let passwordGenerator=(x)=>{
